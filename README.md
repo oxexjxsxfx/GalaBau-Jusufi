@@ -72,7 +72,7 @@ Die Webseite läuft kostenlos auf GitHub Pages. Für die eigene Domain fallen nu
    | AAAA | @ | 2606:50c0:8001::153 |
    | AAAA | @ | 2606:50c0:8002::153 |
    | AAAA | @ | 2606:50c0:8003::153 |
-   | CNAME | www | xxalbogmaingxx.github.io |
+   | CNAME | www | oxexjxsxfx.github.io |
 
 3. Im Repo eine Datei `CNAME` mit dem Domainnamen anlegen, z. B. `galabau-jusufi.de`
 4. Unter GitHub → Settings → Pages die Option **Enforce HTTPS** aktivieren (sobald das Zertifikat bereitsteht)
