@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 440" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration eines gepflegten Gartens mit Weg, Hecke und Baum">
+  <defs>
+    <linearGradient id="h-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfe3ef"/>
+      <stop offset="1" stop-color="#f1f6e4"/>
+    </linearGradient>
+    <linearGradient id="h-lawn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8cc152"/>
+      <stop offset="1" stop-color="#5f9d45"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="440" fill="url(#h-sky)"/>
+  <circle cx="305" cy="92" r="58" fill="#ffe39a" opacity=".35"/>
+  <circle cx="305" cy="92" r="38" fill="#ffe08a"/>
+  <g fill="#fff" opacity=".9">
+    <ellipse cx="92" cy="86" rx="46" ry="14"/>
+    <ellipse cx="112" cy="74" rx="26" ry="16"/>
+    <ellipse cx="205" cy="130" rx="30" ry="9"/>
+  </g>
+  <path d="M0 232C80 182 160 192 230 217S350 190 400 206V440H0Z" fill="#a9d18e"/>
+  <g fill="#5d9a4c">
+    <circle cx="150" cy="200" r="11"/><circle cx="165" cy="204" r="8"/>
+    <circle cx="372" cy="192" r="9"/><circle cx="46" cy="210" r="10"/>
+  </g>
+  <path d="M0 268C90 228 190 243 262 258S362 236 400 246V440H0Z" fill="#7fb547"/>
+  <rect x="302" y="208" width="13" height="80" rx="4" fill="#7a5230"/>
+  <circle cx="280" cy="214" r="31" fill="#2f6b45"/>
+  <circle cx="336" cy="214" r="31" fill="#4a9a52"/>
+  <circle cx="308" cy="192" r="42" fill="#3c8448"/>
+  <circle cx="296" cy="178" r="12" fill="#57a85c" opacity=".7"/>
+  <path d="M0 292C120 272 280 277 400 292V440H0Z" fill="url(#h-lawn)"/>
+  <g fill="#fff" opacity=".1">
+    <path d="M120 285 158 283 96 440H10Z"/>
+    <path d="M258 283 296 286 400 410V440H336Z"/>
+  </g>
+  <path d="M166 440C182 382 232 352 214 296L236 294C258 350 222 386 250 440Z" fill="#ece2cc"/>
+  <g fill="#d6c7a8">
+    <ellipse cx="222" cy="306" rx="9" ry="3.5"/>
+    <ellipse cx="228" cy="326" rx="12" ry="4.5"/>
+    <ellipse cx="222" cy="352" rx="15" ry="5.5"/>
+    <ellipse cx="208" cy="383" rx="19" ry="7"/>
+    <ellipse cx="204" cy="420" rx="24" ry="8.5"/>
+  </g>
+  <path d="M0 250H72C86 250 92 258 92 272V304H0Z" fill="#2f6b45"/>
+  <g fill="#2f6b45">
+    <circle cx="12" cy="252" r="12"/><circle cx="36" cy="248" r="13"/><circle cx="60" cy="250" r="12"/><circle cx="82" cy="258" r="10"/>
+  </g>
+  <ellipse cx="62" cy="410" rx="96" ry="42" fill="#6b4a2c" opacity=".85"/>
+  <g fill="#3c8448">
+    <circle cx="20" cy="392" r="20"/><circle cx="58" cy="384" r="24"/><circle cx="102" cy="394" r="19"/><circle cx="130" cy="410" r="14"/>
+  </g>
+  <g fill="#f28fb1"><circle cx="30" cy="378" r="5"/><circle cx="72" cy="370" r="5"/><circle cx="108" cy="386" r="4.5"/></g>
+  <g fill="#ffd35c"><circle cx="48" cy="392" r="4.5"/><circle cx="92" cy="380" r="4"/><circle cx="126" cy="402" r="4"/></g>
+  <g fill="#fff"><circle cx="12" cy="398" r="4"/><circle cx="64" cy="398" r="4"/></g>
+  <g fill="#3c8448">
+    <circle cx="352" cy="412" r="26"/><circle cx="386" cy="398" r="22"/>
+  </g>
+  <g fill="#c77dff"><circle cx="344" cy="396" r="4.5"/><circle cx="368" cy="408" r="4"/><circle cx="388" cy="386" r="4.5"/></g>
+  <rect x="330" y="300" width="4" height="36" fill="#173a28"/>
+  <rect x="325" y="292" width="14" height="12" rx="3" fill="#173a28"/>
+  <rect x="328" y="295" width="8" height="6" rx="1.5" fill="#ffe08a"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration von frisch verlegtem Rollrasen">
+  <rect width="600" height="400" fill="#d3ecf3"/>
+  <circle cx="500" cy="70" r="34" fill="#ffe08a"/>
+  <path d="M0 150C120 110 260 120 360 140S520 118 600 130V400H0Z" fill="#a9d18e"/>
+  <path d="M0 180C150 160 450 160 600 180V400H0Z" fill="#7fb547"/>
+  <g fill="#8fc75a">
+    <path d="M40 180 110 176 0 330V250Z"/>
+    <path d="M190 172 260 171 170 400H60Z"/>
+    <path d="M340 171 410 172 450 400H320Z"/>
+    <path d="M490 175 560 178 600 290V400H590Z"/>
+  </g>
+  <g transform="translate(120 290)">
+    <path d="M0 40H120V80H0Z" fill="#6b4a2c"/>
+    <path d="M0 40H120V52H0Z" fill="#5f9d45"/>
+    <circle cx="120" cy="60" r="20" fill="#5f9d45"/>
+    <circle cx="120" cy="60" r="20" fill="none" stroke="#6b4a2c" stroke-width="2"/>
+    <path d="M120 60m-12 0a12 12 0 1 0 12-12 8 8 0 1 0 6 8" fill="none" stroke="#6b4a2c" stroke-width="2"/>
+  </g>
+  <g transform="translate(290 250)">
+    <path d="M0 30H100V64H0Z" fill="#6b4a2c"/>
+    <path d="M0 30H100V40H0Z" fill="#5f9d45"/>
+    <circle cx="100" cy="47" r="17" fill="#5f9d45"/>
+    <circle cx="100" cy="47" r="17" fill="none" stroke="#6b4a2c" stroke-width="2"/>
+    <path d="M100 47m-10 0a10 10 0 1 0 10-10 7 7 0 1 0 5 7" fill="none" stroke="#6b4a2c" stroke-width="2"/>
+  </g>
+  <path d="M440 400 470 300" stroke="#8a5a32" stroke-width="7" stroke-linecap="round"/>
+  <path d="M430 400h40l6-18h-52z" fill="#6f7d74"/>
+  <g fill="#3c8448"><circle cx="30" cy="160" r="22"/><circle cx="70" cy="150" r="26"/><circle cx="570" cy="156" r="24"/></g>
+</svg>

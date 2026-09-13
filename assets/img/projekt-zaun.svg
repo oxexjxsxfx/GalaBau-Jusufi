@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration eines Holz-Sichtschutzzauns mit Kletterpflanzen">
+  <rect width="600" height="400" fill="#d7edf3"/>
+  <circle cx="90" cy="70" r="30" fill="#ffe08a"/>
+  <path d="M0 300C150 290 450 290 600 300V400H0Z" fill="#7fb547"/>
+  <g fill="#b98553">
+    <rect x="30" y="110" width="160" height="200"/>
+    <rect x="220" y="110" width="160" height="200"/>
+    <rect x="410" y="110" width="160" height="200"/>
+  </g>
+  <g stroke="#9b683c" stroke-width="3">
+    <path d="M30 140H190M30 170H190M30 200H190M30 230H190M30 260H190M30 290H190"/>
+    <path d="M220 140H380M220 170H380M220 200H380M220 230H380M220 260H380M220 290H380"/>
+    <path d="M410 140H570M410 170H570M410 200H570M410 230H570M410 260H570M410 290H570"/>
+  </g>
+  <g fill="#6e4526">
+    <rect x="14" y="96" width="18" height="224" rx="2"/>
+    <rect x="200" y="96" width="18" height="224" rx="2"/>
+    <rect x="382" y="96" width="18" height="224" rx="2"/>
+    <rect x="570" y="96" width="18" height="224" rx="2"/>
+  </g>
+  <g fill="#173a28"><rect x="12" y="90" width="22" height="8" rx="2"/><rect x="198" y="90" width="22" height="8" rx="2"/><rect x="380" y="90" width="22" height="8" rx="2"/><rect x="568" y="90" width="22" height="8" rx="2"/></g>
+  <path d="M250 320c10-40-20-70 0-110s-10-60 20-90" stroke="#2f6b45" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <g fill="#4a9a52">
+    <ellipse cx="258" cy="290" rx="12" ry="7" transform="rotate(-30 258 290)"/><ellipse cx="238" cy="262" rx="12" ry="7" transform="rotate(30 238 262)"/>
+    <ellipse cx="262" cy="230" rx="12" ry="7" transform="rotate(-30 262 230)"/><ellipse cx="244" cy="196" rx="12" ry="7" transform="rotate(30 244 196)"/>
+    <ellipse cx="258" cy="160" rx="12" ry="7" transform="rotate(-30 258 160)"/><ellipse cx="276" cy="130" rx="12" ry="7" transform="rotate(20 276 130)"/>
+  </g>
+  <g fill="#e0664a"><circle cx="246" cy="276" r="6"/><circle cx="256" cy="212" r="6"/><circle cx="266" cy="146" r="6"/></g>
+  <path d="M0 312H600V336H0Z" fill="#d9ccb0"/>
+  <g fill="#bfae8c"><circle cx="40" cy="324" r="4"/><circle cx="120" cy="320" r="3"/><circle cx="210" cy="328" r="4"/><circle cx="330" cy="322" r="3"/><circle cx="440" cy="328" r="4"/><circle cx="540" cy="320" r="3"/></g>
+  <g fill="#3c8448"><circle cx="90" cy="330" r="30"/><circle cx="140" cy="340" r="22"/><circle cx="480" cy="332" r="28"/><circle cx="530" cy="344" r="22"/></g>
+  <g fill="#ffd35c"><circle cx="80" cy="316" r="4.5"/><circle cx="104" cy="330" r="4"/><circle cx="490" cy="318" r="4.5"/></g>
+</svg>
