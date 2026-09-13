@@ -17,7 +17,8 @@ datenschutz.html    Datenschutzerklärung
 404.html            Fehlerseite
 css/style.css       Gesamtes Design (Farben ganz oben als CSS-Variablen)
 js/main.js          Menü, Animationen, Galerie, Kontaktformular
-assets/img/         Illustrationen / Bilder
+assets/img/         Weboptimierte Bilder (JPG)
+assets/img_ki/      Originale der KI-Bilder (nur lokal, nicht im Repo)
 assets/icons/       Favicon
 KI-BILDER.md        Prompts und Regeln für KI-generierte Symbolbilder
 ```
@@ -26,7 +27,7 @@ KI-BILDER.md        Prompts und Regeln für KI-generierte Symbolbilder
 
 - [ ] E-Mail-Adresse eintragen (Platzhalter `info@galabau-jusufi.de` in `index.html`, `impressum.html`, `datenschutz.html` und `js/main.js`)
 - [ ] Domain registrieren und verbinden (siehe unten)
-- [ ] Bilder: KI-Symbolbilder oder echte Fotos einbauen (siehe [KI-BILDER.md](KI-BILDER.md))
+- [x] Bilder: KI-Symbolbilder eingebaut (Stand und fehlende Bilder siehe [KI-BILDER.md](KI-BILDER.md))
 - [ ] Kontaktformular: E-Mail-Programm (Standard) oder Web3Forms (siehe unten)
 - [ ] Impressum und Datenschutz prüfen lassen, danach die gelben Hinweis-Kästen entfernen
 - [ ] In allen HTML-Dateien `<meta name="robots" content="noindex, nofollow">` entfernen, damit Google die Seite findet

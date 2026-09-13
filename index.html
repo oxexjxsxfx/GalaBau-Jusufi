@@ -121,7 +121,8 @@
         </div>
         <div class="hero-visual">
           <div class="hero-art">
-            <img src="assets/img/hero-garten.svg" width="400" height="440" alt="Illustration eines gepflegten Gartens mit Steinweg, Hecke und Baum">
+            <img src="assets/img/hero-terrasse-1400.jpg" width="1400" height="764" alt="Symbolbild: Holzterrasse mit Sitzmöbeln neben einem gepflegten Garten mit Rasen und Staudenbeeten" fetchpriority="high">
+            <span class="img-tag">Symbolbild (KI)</span>
           </div>
           <div class="hero-badge">
             <span class="hero-badge-icon"><svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg></span>
@@ -196,24 +197,31 @@
     <!-- ========== Über uns ========== -->
     <section class="section section-sand" id="ueber-uns" aria-labelledby="ueber-title">
       <div class="container about-grid">
+        <!-- Sobald es ein echtes Foto von Hamdi Jusufi gibt, kann es hier die Karte ergänzen. Kein KI-Bild einer Person verwenden. -->
         <div class="about-visual reveal">
-          <div class="about-art">
-            <img src="assets/img/ueber-uns.svg" width="500" height="460" alt="Illustration einer Holzterrasse mit Pergola, Pflanzkübeln und Schubkarre" loading="lazy">
+          <div class="about-card">
+            <svg class="ic about-card-leaf" aria-hidden="true"><use href="#i-leaf"/></svg>
+            <div class="about-person">
+              <span class="about-monogram" aria-hidden="true">HJ</span>
+              <span><strong>Hamdi Jusufi</strong><span class="about-role">Inhaber von Galabau Jusufi</span></span>
+            </div>
+            <blockquote>Ein schöner Garten entsteht nicht zufällig – sondern mit Sorgfalt, Erfahrung und ehrlicher Arbeit.</blockquote>
+            <ul class="about-facts">
+              <li><strong>Gummersbach</strong><span>Standort &amp; Einsatzgebiet</span></li>
+              <li><strong>Ganzjährig</strong><span>Von der Gartenpflege bis zum Winterdienst</span></li>
+              <li><strong>Direkt</strong><span>Ihr Ansprechpartner ist der Inhaber</span></li>
+            </ul>
           </div>
-          <blockquote class="about-quote">
-            Ein schöner Garten entsteht nicht zufällig – sondern mit Sorgfalt, Erfahrung und ehrlicher Arbeit.
-            <cite>Hamdi Jusufi, Inhaber</cite>
-          </blockquote>
         </div>
         <div class="reveal reveal-delay-1">
           <p class="eyebrow">Über uns</p>
-          <h2 id="ueber-title">Ein Familienbetrieb mit grünem Daumen</h2>
-          <p>Hinter Galabau Jusufi steht Hamdi Jusufi – mit viel Erfahrung, Leidenschaft für das Handwerk und dem Anspruch, jeden Garten so zu behandeln, als wäre es der eigene.</p>
-          <p>Bei uns haben Sie einen festen Ansprechpartner von der ersten Besichtigung bis zur fertigen Arbeit. Wir hören zu, beraten ehrlich und setzen Ihre Wünsche zuverlässig um – ob kleine Pflegearbeit oder komplette Neuanlage.</p>
+          <h2 id="ueber-title">Persönlich betreut – direkt vom Inhaber</h2>
+          <p>Hinter Galabau Jusufi steht Hamdi Jusufi. Seit mehreren Jahren kümmert er sich mit viel Erfahrung und Leidenschaft für das Handwerk um Gärten und Grundstücke in Gummersbach und Umgebung – mit dem Anspruch, jeden Garten so zu behandeln, als wäre es der eigene.</p>
+          <p>Bei Galabau Jusufi sprechen Sie direkt mit dem Inhaber – von der ersten Besichtigung bis zur fertigen Arbeit. Keine wechselnden Ansprechpartner, sondern ehrliche Beratung und zuverlässige Umsetzung – ob kleine Pflegearbeit oder komplette Neuanlage.</p>
           <ul class="values">
             <li>
               <span class="values-icon"><svg class="ic" aria-hidden="true"><use href="#i-user"/></svg></span>
-              <span><strong>Persönlich</strong><span>Ein Ansprechpartner für Ihr gesamtes Projekt.</span></span>
+              <span><strong>Persönlich</strong><span>Ein fester Ansprechpartner – der Inhaber selbst.</span></span>
             </li>
             <li>
               <span class="values-icon"><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg></span>
@@ -271,36 +279,28 @@
         <div class="section-head center reveal">
           <p class="eyebrow">Galerie</p>
           <h2 id="galerie-title">Ideen für Ihren Garten</h2>
-          <p>Von der gemütlichen Holzterrasse über den sauberen Heckenschnitt bis zum geräumten Weg im Winter – so vielfältig sind die Arbeiten, die wir für Sie übernehmen.</p>
+          <p>Vom frischen Rollrasen über den sauberen Heckenschnitt bis zur geräumten Einfahrt im Winter – so vielfältig sind die Arbeiten, die wir für Sie übernehmen.</p>
         </div>
-        <!-- Bilder tauschen: Datei in assets/img ablegen und src/alt unten anpassen. KI-Bilder immer als Symbolbilder kennzeichnen (siehe KI-BILDER.md). -->
+        <!-- Bilder tauschen: siehe KI-BILDER.md. Ungerade Anzahl? Letztes Bild mit class="is-wide" über die volle Breite. -->
         <div class="gallery">
-          <button class="gallery-item is-wide reveal" type="button" aria-label="Bild Holzterrasse vergrößern">
-            <img src="assets/img/projekt-terrasse.svg" width="600" height="400" alt="Holzterrasse mit Sonnenschirm, Gartenmöbeln und Pflanzkübeln" loading="lazy">
-            <span class="gallery-caption"><strong>Holzterrasse</strong><span>Terrassenbau</span></span>
-          </button>
-          <button class="gallery-item reveal reveal-delay-1" type="button" aria-label="Bild Heckenschnitt vergrößern">
-            <img src="assets/img/projekt-hecke.svg" width="600" height="400" alt="Frisch geschnittene Hecke mit Formgehölzen" loading="lazy">
-            <span class="gallery-caption"><strong>Heckenschnitt</strong><span>Hecken- &amp; Gehölzschnitt</span></span>
-          </button>
-          <button class="gallery-item reveal" type="button" aria-label="Bild Rollrasen vergrößern">
-            <img src="assets/img/projekt-rollrasen.svg" width="600" height="400" alt="Frisch verlegter Rollrasen" loading="lazy">
+          <button class="gallery-item reveal" type="button" aria-label="Bild Neuanlage mit Rollrasen vergrößern">
+            <img src="assets/img/galerie-rollrasen-800.jpg" srcset="assets/img/galerie-rollrasen-800.jpg 800w, assets/img/galerie-rollrasen-1400.jpg 1400w" sizes="(max-width: 600px) 100vw, 50vw" data-full="assets/img/galerie-rollrasen-1400.jpg" width="1400" height="764" alt="Symbolbild: Rollrasen wird im Garten eines Einfamilienhauses verlegt" loading="lazy">
             <span class="gallery-caption"><strong>Neuanlage mit Rollrasen</strong><span>Rasen &amp; Rollrasen</span></span>
           </button>
-          <button class="gallery-item reveal reveal-delay-1" type="button" aria-label="Bild Baumfällung vergrößern">
-            <img src="assets/img/projekt-baum.svg" width="600" height="400" alt="Baumstumpf, gestapeltes Holz und Motorsäge nach einer Baumfällung" loading="lazy">
-            <span class="gallery-caption"><strong>Baumfällung</strong><span>Bäume &amp; Gehölze</span></span>
+          <button class="gallery-item reveal reveal-delay-1" type="button" aria-label="Bild Heckenschnitt vergrößern">
+            <img src="assets/img/galerie-hecke-600.jpg" srcset="assets/img/galerie-hecke-600.jpg 600w, assets/img/galerie-hecke-976.jpg 976w" sizes="(max-width: 600px) 100vw, 50vw" data-full="assets/img/galerie-hecke-976.jpg" width="976" height="1092" style="object-position: 50% 45%" alt="Symbolbild: Eine dichte Hecke wird mit einer Akku-Heckenschere in Form geschnitten" loading="lazy">
+            <span class="gallery-caption"><strong>Heckenschnitt</strong><span>Hecken- &amp; Gehölzschnitt</span></span>
           </button>
-          <button class="gallery-item reveal reveal-delay-2" type="button" aria-label="Bild Sichtschutzzaun vergrößern">
-            <img src="assets/img/projekt-zaun.svg" width="600" height="400" alt="Holz-Sichtschutzzaun mit Kletterpflanzen" loading="lazy">
-            <span class="gallery-caption"><strong>Sichtschutz aus Holz</strong><span>Zaunbau</span></span>
-          </button>
-          <button class="gallery-item is-wide reveal reveal-delay-1" type="button" aria-label="Bild Winterdienst vergrößern">
-            <img src="assets/img/projekt-winter.svg" width="600" height="400" alt="Geräumter und gestreuter Weg vor einem Haus im Winter" loading="lazy">
+          <button class="gallery-item reveal" type="button" aria-label="Bild Winterdienst vergrößern">
+            <img src="assets/img/galerie-winterdienst-800.jpg" srcset="assets/img/galerie-winterdienst-800.jpg 800w, assets/img/galerie-winterdienst-1400.jpg 1400w" sizes="(max-width: 600px) 100vw, 50vw" data-full="assets/img/galerie-winterdienst-1400.jpg" width="1400" height="764" alt="Symbolbild: Geräumte und gestreute Hofeinfahrt vor einem Haus im Schnee" loading="lazy">
             <span class="gallery-caption"><strong>Winterdienst</strong><span>Räumen &amp; Streuen</span></span>
           </button>
+          <button class="gallery-item reveal reveal-delay-1" type="button" aria-label="Bild Sichtschutzzaun vergrößern">
+            <img src="assets/img/galerie-zaun-800.jpg" srcset="assets/img/galerie-zaun-800.jpg 800w, assets/img/galerie-zaun-1400.jpg 1400w" sizes="(max-width: 600px) 100vw, 50vw" data-full="assets/img/galerie-zaun-1400.jpg" width="1400" height="764" alt="Symbolbild: Montage eines Sichtschutzzauns aus Holzlatten im Garten" loading="lazy">
+            <span class="gallery-caption"><strong>Sichtschutz aus Holz</strong><span>Zaunbau</span></span>
+          </button>
         </div>
-        <p class="gallery-note">Abbildungen sind Symbolbilder. Gern zeigen wir Ihnen bei der Besichtigung Beispiele aus unseren Projekten.</p>
+        <p class="gallery-note">Alle Abbildungen auf dieser Seite sind KI-generierte Symbolbilder und zeigen keine konkreten Aufträge. Gern zeigen wir Ihnen bei der Besichtigung Beispiele aus unseren Projekten.</p>
 
         <div class="cta-band reveal">
           <div>
@@ -414,10 +414,6 @@
           <details>
             <summary>Wann ist die beste Zeit für neue Gartenprojekte?</summary>
             <div class="faq-body"><p>Pflanzarbeiten gelingen am besten im Frühjahr und Herbst. Terrassen- und Zaunbau sind bei frostfreiem Wetter fast das ganze Jahr über möglich. Frühzeitig anfragen lohnt sich – vor allem vor der Saison.</p></div>
-          </details>
-          <details>
-            <summary>Kann ich die Kosten steuerlich absetzen?</summary>
-            <div class="faq-body"><p>Für Arbeiten an Ihrem selbst genutzten Grundstück können Sie in der Regel 20 % der Arbeitskosten als Handwerkerleistung nach § 35a EStG absetzen. Wichtig ist, dass Arbeits- und Materialkosten auf der Rechnung getrennt aufgeführt sind und Sie per Überweisung bezahlen. Im Zweifel hilft Ihnen Ihr Steuerberater weiter.</p></div>
           </details>
         </div>
       </div>

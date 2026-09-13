@@ -89,7 +89,7 @@
       item.addEventListener('click', () => {
         const img = item.querySelector('img');
         const title = item.querySelector('.gallery-caption strong');
-        lbImg.src = img.currentSrc || img.src;
+        lbImg.src = img.dataset.full || img.currentSrc || img.src;
         lbImg.alt = img.alt;
         lbCaption.textContent = title ? title.textContent : '';
         lightbox.showModal();
