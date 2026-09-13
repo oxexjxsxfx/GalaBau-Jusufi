@@ -7,20 +7,20 @@ Bis echte Fotos von Aufträgen vorhanden sind, nutzt die Webseite KI-generierte 
 | Bereich | Datei(en) in `assets/img/` | Original in `assets/img_ki/` | Status |
 |---|---|---|---|
 | Hero (oben) | `hero-terrasse-1400.jpg` | `…moxcnmmoxcnmmoxc` | ✅ |
-| Galerie: Holzterrasse | `galerie-terrasse-800/1376.jpg` | `…86luy286luy286lu` | ✅ |
+| Galerie: Holzterrasse | `galerie-terrasse-800/1376.jpg` | – (Original vom Zaunbild überschrieben, Webversion in voller Größe vorhanden) | ✅ |
 | Galerie: Rollrasen | `galerie-rollrasen-800/1376.jpg` | `…k0df1rk0df1rk0df (3)` | ✅ |
 | Galerie: Heckenschnitt | `galerie-hecke-800/1376.jpg` | `…k0df1rk0df1rk0df (1)` | ✅ |
 | Galerie: Baumfällung | `galerie-baumfaellung-800/1376.jpg` | `…k0df1rk0df1rk0df (2)` | ✅ |
-| Galerie: Zaunbau | `galerie-zaun-800/1400.jpg` | `…dth77mdth77mdth7` | ⚠️ Ersatz empfohlen: zwei Arbeiter im Bild (wirkt wie ein Team) |
+| Galerie: Zaunbau | `galerie-zaun-800/1376.jpg` | `…86luy286luy286lu` | ✅ |
 | Galerie: Winterdienst | `galerie-winterdienst-800/1376.jpg` | `…k0df1rk0df1rk0df` | ✅ |
 | Über uns | – | – | bewusst ohne KI-Bild, hier gehört ein echtes Foto von Hamdi hin |
 
-Verworfen: das erste Baumfällung-Bild (falsche, gefährliche Fälltechnik) und die ersten Bilder zu Heckenschnitt, Rollrasen und Winterdienst (Personen, nachgemachte Markenlogos, doppeltes Haus).
+Verworfen: das erste Baumfällung-Bild (falsche, gefährliche Fälltechnik) und die ersten Bilder zu Heckenschnitt, Rollrasen, Zaunbau und Winterdienst (Personen, nachgemachte Markenlogos, doppeltes Haus).
 
 ## So geht's
 
 1. Bild mit Gemini (oder einem anderen Generator mit erlaubter kommerzieller Nutzung) erstellen, Prompt unten plus **Stil-Zusatz**
-2. Das Originalbild in `assets/img_ki/` ablegen. Der Ordner wird nicht ins Repo hochgeladen.
+2. Das Originalbild in `assets/img_ki/` ablegen. Der Ordner wird nicht ins Repo hochgeladen. **Achtung:** Gemini vergibt innerhalb eines Chats oft denselben Dateinamen. Beim Speichern umbenennen (z. B. `zaun.jfif`), sonst wird ein älteres Bild überschrieben.
 3. Bescheid geben: Das Bild wird verkleinert, komprimiert und eingebaut.
 
 ## Regeln
@@ -35,12 +35,6 @@ Verworfen: das erste Baumfällung-Bild (falsche, gefährliche Fälltechnik) und 
 ## Stil-Zusatz (an jeden Prompt anhängen)
 
 > Fotorealistisch, wie mit einer Profi-Kamera fotografiert, natürliches Licht, realistische Farben. Typisches Grundstück in Deutschland. Querformat 16:9. Menschenleer, keine Personen, keine Markenlogos, kein Text, kein Wasserzeichen.
-
-## Prompt für das noch empfohlene Ersatzbild
-
-### Zaunbau
-
-> Ein fertig montierter, moderner Sichtschutzzaun aus horizontalen Lärchenholz-Latten an der Grundstücksgrenze eines Reihenhausgartens mit rotem Klinkerhaus. Davor ein frisch angelegtes Beet mit Ziergräsern und Hortensien, im Vordergrund gepflegter Rasen. Sonniger Nachmittag.
 
 ## Echte Fotos (am besten)
 
