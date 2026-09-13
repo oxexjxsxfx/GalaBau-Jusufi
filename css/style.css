@@ -106,15 +106,19 @@ p { margin: 0 0 1em; }
 .site-header {
   position: fixed; inset: 0 0 auto; z-index: 100; height: var(--header-h);
   display: flex; align-items: center;
-  transition: background-color .3s ease, box-shadow .3s ease, height .3s ease;
 }
-.site-header.is-scrolled,
-.site-header.is-solid {
+/* Hintergrund als Pseudo-Element: backdrop-filter direkt am Header würde
+   das fixierte Mobilmenü auf die Header-Höhe begrenzen. */
+.site-header::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
   background: rgba(251, 249, 244, .92);
   -webkit-backdrop-filter: saturate(160%) blur(12px);
   backdrop-filter: saturate(160%) blur(12px);
   box-shadow: 0 1px 0 var(--line);
+  opacity: 0; transition: opacity .3s ease;
 }
+.site-header.is-scrolled::before,
+.site-header.is-solid::before { opacity: 1; }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
 
 .brand { display: inline-flex; align-items: center; gap: .7rem; text-decoration: none; color: var(--white); }
