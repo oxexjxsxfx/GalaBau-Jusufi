@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration einer gepflasterten Terrasse mit Sonnenschirm">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration einer Holzterrasse mit Sonnenschirm">
   <rect width="600" height="400" fill="#cfe7ef"/>
   <rect y="120" width="600" height="110" fill="#3c8448"/>
   <g fill="#3c8448"><circle cx="30" cy="124" r="28"/><circle cx="95" cy="112" r="32"/><circle cx="165" cy="122" r="28"/><circle cx="235" cy="110" r="32"/><circle cx="305" cy="122" r="28"/><circle cx="375" cy="112" r="32"/><circle cx="445" cy="122" r="28"/><circle cx="515" cy="110" r="32"/><circle cx="580" cy="122" r="28"/></g>
-  <path d="M0 230H600V400H0Z" fill="#d9ccb0"/>
-  <g stroke="#bfae8c" stroke-width="2" fill="none">
-    <path d="M0 262H600M0 300H600M0 346H600"/>
-    <path d="M60 230 20 400M150 230 130 400M240 230 238 400M330 230 346 400M420 230 454 400M510 230 562 400"/>
+  <path d="M0 230H600V400H0Z" fill="#c89563"/>
+  <g stroke="#a8703b" stroke-width="2" fill="none">
+    <path d="M0 250H600M0 272H600M0 297H600M0 325H600M0 356H600M0 390H600"/>
+    <path d="M120 230v20M380 230v20M250 250v22M510 250v22M60 272v25M330 272v25M190 297v28M460 297v28M90 325v31M300 325v31M560 325v31M200 356v34M430 356v34"/>
   </g>
-  <path d="M0 226H600V236H0Z" fill="#c2b392"/>
+  <path d="M0 224H600V234H0Z" fill="#a8703b"/>
   <path d="M300 120V300" stroke="#5b3b22" stroke-width="6"/>
   <path d="M190 128Q300 60 410 128Z" fill="#e0664a"/>
   <path d="M245 128Q300 66 300 72 300 66 355 128Z" fill="#f08a6b"/>

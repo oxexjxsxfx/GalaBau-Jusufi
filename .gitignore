@@ -2,3 +2,6 @@
 .claude/settings.local.json
 .DS_Store
 Thumbs.db
+
+# Rohdaten der KI-Bilder (optimierte Versionen liegen in assets/img)
+ki-bilder/

@@ -1,7 +1,8 @@
 # Galabau Jusufi – Webseite
 
-Moderne, responsive Webseite für **Galabau Jusufi**, einen Garten- und Landschaftsbaubetrieb.
+Moderne, responsive Webseite für **Galabau Jusufi**, Garten- und Landschaftsbau in Gummersbach (Inhaber: Hamdi Jusufi).
 
+- **Vorschau:** https://oxexjxsxfx.github.io/GalaBau-Jusufi/
 - Reines HTML, CSS und JavaScript: kein Build-Schritt, keine Abhängigkeiten
 - Optimiert für Smartphone, Tablet und Desktop
 - Datenschutzfreundlich: keine Cookies, kein Tracking, keine Google Fonts oder Maps
@@ -10,40 +11,31 @@ Moderne, responsive Webseite für **Galabau Jusufi**, einen Garten- und Landscha
 ## Struktur
 
 ```
-index.html          Startseite (Leistungen, Über uns, Ablauf, Projekte, Einsatzgebiet, FAQ, Kontakt)
-impressum.html      Impressum (Platzhalter ausfüllen!)
-datenschutz.html    Datenschutzerklärung (Platzhalter ausfüllen!)
+index.html          Startseite (Leistungen, Über uns, Ablauf, Galerie, Einsatzgebiet, FAQ, Kontakt)
+impressum.html      Impressum
+datenschutz.html    Datenschutzerklärung
 404.html            Fehlerseite
 css/style.css       Gesamtes Design (Farben ganz oben als CSS-Variablen)
 js/main.js          Menü, Animationen, Galerie, Kontaktformular
-assets/img/         Illustrationen / Projektbilder
+assets/img/         Illustrationen / Bilder
 assets/icons/       Favicon
+KI-BILDER.md        Prompts und Regeln für KI-generierte Symbolbilder
 ```
 
-## Vor dem Go-Live: Platzhalter ersetzen
+## Offene Punkte vor dem Go-Live
 
-Diese Platzhalter kommen in `index.html`, `impressum.html` und `datenschutz.html` vor:
+- [ ] E-Mail-Adresse eintragen (Platzhalter `info@galabau-jusufi.de` in `index.html`, `impressum.html`, `datenschutz.html` und `js/main.js`)
+- [ ] Domain registrieren und verbinden (siehe unten)
+- [ ] Bilder: KI-Symbolbilder oder echte Fotos einbauen (siehe [KI-BILDER.md](KI-BILDER.md))
+- [ ] Kontaktformular: E-Mail-Programm (Standard) oder Web3Forms (siehe unten)
+- [ ] Impressum und Datenschutz prüfen lassen, danach die gelben Hinweis-Kästen entfernen
+- [ ] In allen HTML-Dateien `<meta name="robots" content="noindex, nofollow">` entfernen, damit Google die Seite findet
 
-| Platzhalter | Ersetzen durch |
-|---|---|
-| `[Vorname]` | Vorname des Inhabers |
-| `Musterstraße 1`, `12345 Musterstadt`, `Musterstadt` | echte Adresse und Ort |
-| `0123 456789` / `+49123456789` | Festnetz- bzw. Hauptnummer |
-| `0170 0000000` / `491700000000` | Mobil- / WhatsApp-Nummer |
-| `info@galabau-jusufi.de` | echte E-Mail-Adresse (auch in `js/main.js`) |
-| `Beispielhausen`, `Neudorf`, … | Orte im Einsatzgebiet |
-| `[DE000000000]` | USt-IdNr. (oder Abschnitt entfernen) |
+## Bilder austauschen
 
-Außerdem vor dem Go-Live:
-
-1. In allen HTML-Dateien die Zeile `<meta name="robots" content="noindex, nofollow">` entfernen, damit Google die Seite findet
-2. Impressum und Datenschutz prüfen lassen
-3. Echte Projektfotos einbauen (siehe unten)
-
-## Eigene Fotos einbauen
-
-1. Fotos als `.jpg` oder `.webp` in `assets/img/` ablegen, idealerweise max. 1600 px breit und unter 400 KB
-2. In `index.html` im Bereich `Projekte` das `src` und `alt` des jeweiligen Bildes anpassen
+1. Bild als `.jpg` oder `.webp` in `assets/img/` ablegen, idealerweise max. 1600 px breit und unter 400 KB
+2. In `index.html` `src` und `alt` des jeweiligen Bildes anpassen
+3. KI-Bilder bleiben als Symbolbilder gekennzeichnet (Hinweis unter der Galerie)
 
 ## Kontaktformular
 

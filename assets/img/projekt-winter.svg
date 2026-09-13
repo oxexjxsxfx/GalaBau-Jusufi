@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration eines geräumten und gestreuten Wegs vor einem Haus im Winter">
+  <defs>
+    <linearGradient id="w-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c9d9e6"/>
+      <stop offset="1" stop-color="#eef3f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#w-sky)"/>
+  <path d="M0 190C80 160 200 170 290 192V270H0Z" fill="#f4f8fb"/>
+  <g>
+    <path d="M80 80 36 210h88z" fill="#2f6b45"/>
+    <path d="M80 80 62 132c12-6 24-6 36 0z" fill="#fff"/>
+    <path d="M52 170c18-8 38-8 56 0" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+    <path d="M180 110 146 216h68z" fill="#3c8448"/>
+    <path d="M180 110 166 150c9-5 19-5 28 0z" fill="#fff"/>
+  </g>
+  <rect x="300" y="92" width="264" height="170" fill="#efe6d6"/>
+  <path d="M276 98 432 12l156 86z" fill="#fff"/>
+  <path d="M276 98h312" stroke="#8f98a0" stroke-width="6" stroke-linecap="round"/>
+  <rect x="330" y="130" width="60" height="56" rx="3" fill="#ffe8a8" stroke="#6e4526" stroke-width="5"/>
+  <path d="M360 130v56M330 158h60" stroke="#6e4526" stroke-width="4"/>
+  <rect x="324" y="186" width="72" height="7" rx="3.5" fill="#fff"/>
+  <rect x="440" y="160" width="58" height="102" rx="3" fill="#6e4526"/>
+  <circle cx="488" cy="214" r="3.5" fill="#e3c28f"/>
+  <rect x="512" y="172" width="12" height="18" rx="3" fill="#173a28"/>
+  <rect x="515" y="176" width="6" height="10" rx="1" fill="#ffe08a"/>
+  <path d="M0 250C150 238 450 240 600 252V400H0Z" fill="#fff"/>
+  <path d="M440 262H498C502 300 424 330 364 360S312 390 302 400H170C220 350 380 310 440 262Z" fill="#c9c3b6"/>
+  <g fill="#7a6f60">
+    <circle cx="460" cy="276" r="2"/><circle cx="478" cy="284" r="1.8"/><circle cx="446" cy="292" r="2"/><circle cx="420" cy="306" r="1.8"/>
+    <circle cx="398" cy="318" r="2"/><circle cx="372" cy="326" r="1.8"/><circle cx="350" cy="340" r="2"/><circle cx="318" cy="350" r="1.8"/>
+    <circle cx="290" cy="364" r="2"/><circle cx="262" cy="372" r="1.8"/><circle cx="236" cy="386" r="2"/><circle cx="272" cy="392" r="1.8"/>
+    <circle cx="330" cy="372" r="2"/><circle cx="410" cy="330" r="1.8"/>
+  </g>
+  <g fill="#fff">
+    <ellipse cx="150" cy="372" rx="46" ry="18"/><ellipse cx="196" cy="340" rx="38" ry="15"/><ellipse cx="520" cy="292" rx="44" ry="16"/><ellipse cx="462" cy="330" rx="36" ry="14"/>
+  </g>
+  <g fill="#dbe6ee">
+    <path d="M110 380c20 8 60 8 86-4-20 12-64 14-86 4z"/><path d="M480 300c20 8 60 6 82-6-20 12-60 14-82 6z"/>
+  </g>
+  <path d="M322 168 302 256" stroke="#6e4526" stroke-width="6" stroke-linecap="round"/>
+  <path d="M314 166h18" stroke="#173a28" stroke-width="6" stroke-linecap="round"/>
+  <path d="M280 254h42l-6 22h-30z" fill="#e0664a"/>
+  <g>
+    <path d="M362 300h50l-8 30h-34z" fill="#2e7d4f"/>
+    <rect x="358" y="296" width="58" height="8" rx="3" fill="#173a28"/>
+    <circle cx="374" cy="336" r="8" fill="#173a28"/>
+    <circle cx="402" cy="336" r="8" fill="#173a28"/>
+    <path d="M412 302l30-28" stroke="#173a28" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <g fill="#fff">
+    <circle cx="40" cy="40" r="3"/><circle cx="120" cy="30" r="2.5"/><circle cx="210" cy="60" r="3"/><circle cx="260" cy="24" r="2"/>
+    <circle cx="160" cy="90" r="2.5"/><circle cx="240" cy="120" r="3"/><circle cx="30" cy="130" r="2.5"/><circle cx="580" cy="40" r="3"/>
+    <circle cx="520" cy="130" r="2"/><circle cx="270" cy="160" r="2.5"/><circle cx="110" cy="240" r="2.5"/><circle cx="560" cy="200" r="2.5"/>
+  </g>
+</svg>
