@@ -4,15 +4,18 @@ Bis echte Fotos von Aufträgen vorhanden sind, nutzt die Webseite KI-generierte 
 
 ## Aktueller Stand
 
-| Bereich | Datei(en) in `assets/img/` | Status |
-|---|---|---|
-| Hero (oben) | `hero-terrasse-1400.jpg` | ✅ eingebaut |
-| Galerie: Rollrasen | `galerie-rollrasen-800/1400.jpg` | ✅ eingebaut |
-| Galerie: Winterdienst | `galerie-winterdienst-800/1400.jpg` | ✅ eingebaut |
-| Galerie: Heckenschnitt | `galerie-hecke-600/976.jpg` | ⚠️ eingebaut, Ersatz empfohlen: nachgemachte „STIHL“-Logos, gut erkennbares Gesicht |
-| Galerie: Zaunbau | `galerie-zaun-800/1400.jpg` | ⚠️ eingebaut, Ersatz empfohlen: dasselbe Haus wie beim Rollrasen-Bild |
-| Galerie: Baumfällung | – | ❌ nicht eingebaut: fachlich falsche und gefährliche Fälltechnik |
-| Über uns | – | bewusst ohne KI-Bild, hier gehört ein echtes Foto von Hamdi hin |
+| Bereich | Datei(en) in `assets/img/` | Original in `assets/img_ki/` | Status |
+|---|---|---|---|
+| Hero (oben) | `hero-terrasse-1400.jpg` | `…moxcnmmoxcnmmoxc` | ✅ |
+| Galerie: Holzterrasse | `galerie-terrasse-800/1376.jpg` | `…86luy286luy286lu` | ✅ |
+| Galerie: Rollrasen | `galerie-rollrasen-800/1376.jpg` | `…k0df1rk0df1rk0df (3)` | ✅ |
+| Galerie: Heckenschnitt | `galerie-hecke-800/1376.jpg` | `…k0df1rk0df1rk0df (1)` | ✅ |
+| Galerie: Baumfällung | `galerie-baumfaellung-800/1376.jpg` | `…k0df1rk0df1rk0df (2)` | ✅ |
+| Galerie: Zaunbau | `galerie-zaun-800/1400.jpg` | `…dth77mdth77mdth7` | ⚠️ Ersatz empfohlen: zwei Arbeiter im Bild (wirkt wie ein Team) |
+| Galerie: Winterdienst | `galerie-winterdienst-800/1376.jpg` | `…k0df1rk0df1rk0df` | ✅ |
+| Über uns | – | – | bewusst ohne KI-Bild, hier gehört ein echtes Foto von Hamdi hin |
+
+Verworfen: das erste Baumfällung-Bild (falsche, gefährliche Fälltechnik) und die ersten Bilder zu Heckenschnitt, Rollrasen und Winterdienst (Personen, nachgemachte Markenlogos, doppeltes Haus).
 
 ## So geht's
 
@@ -33,17 +36,9 @@ Bis echte Fotos von Aufträgen vorhanden sind, nutzt die Webseite KI-generierte 
 
 > Fotorealistisch, wie mit einer Profi-Kamera fotografiert, natürliches Licht, realistische Farben. Typisches Grundstück in Deutschland. Querformat 16:9. Menschenleer, keine Personen, keine Markenlogos, kein Text, kein Wasserzeichen.
 
-## Prompts für die fehlenden bzw. empfohlenen Ersatzbilder
+## Prompt für das noch empfohlene Ersatzbild
 
-### Baumfällung (fehlt)
-
-> Nach einer fachgerechten Baumfällung in einem Privatgarten: Ein frischer, sauber und dicht über dem Boden abgesägter Baumstumpf, daneben ordentlich gestapelte Stammstücke gleicher Länge. Auf dem Stumpf liegen eine orangefarbene Motorsäge und ein Forsthelm mit Gesichts- und Gehörschutz. Im Hintergrund ein gepflegter Garten mit Hecke und ein Holzhaus-Schuppen. Herbstlicht mit etwas Laub auf dem Rasen.
-
-### Heckenschnitt (Ersatz)
-
-> Eine frisch und exakt gerade geschnittene, dichte Ligusterhecke entlang eines Gartens mit Fachwerkhaus im Hintergrund. Davor liegt Schnittgut auf einer Plane, daneben lehnt eine orangefarbene Akku-Heckenschere an der Hecke. Gepflegter Rasen im Vordergrund, warmes Abendlicht.
-
-### Zaunbau (Ersatz)
+### Zaunbau
 
 > Ein fertig montierter, moderner Sichtschutzzaun aus horizontalen Lärchenholz-Latten an der Grundstücksgrenze eines Reihenhausgartens mit rotem Klinkerhaus. Davor ein frisch angelegtes Beet mit Ziergräsern und Hortensien, im Vordergrund gepflegter Rasen. Sonniger Nachmittag.
 
