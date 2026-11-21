@@ -11,23 +11,23 @@ Moderne, responsive Webseite für **Galabau Jusufi**, Garten- und Landschaftsbau
 ## Struktur
 
 ```
-index.html          Startseite (Leistungen, Über uns, Ablauf, Galerie, Einsatzgebiet, FAQ, Kontakt)
+index.html          Startseite (Leistungen, Über uns, Ablauf, Galerie, Bewertungen, Einsatzgebiet, FAQ, Kontakt)
 impressum.html      Impressum
 datenschutz.html    Datenschutzerklärung
 404.html            Fehlerseite
 css/style.css       Gesamtes Design (Farben ganz oben als CSS-Variablen)
-js/main.js          Menü, Animationen, Galerie, Kontaktformular
+js/main.js          Menü, Animationen, Galerie, Kontakt- und Bewertungsformular
 assets/img/         Weboptimierte Bilder (JPG)
-assets/img_ki/      Originale der KI-Bilder (nur lokal, nicht im Repo)
 assets/icons/       Favicon
-KI-BILDER.md        Prompts und Regeln für KI-generierte Symbolbilder
+check24/            Gespeichertes Check24-Profil mit Original-Fotos und Bewertungen (nur lokal, nicht im Repo)
 ```
 
 ## Offene Punkte vor dem Go-Live
 
 - [ ] E-Mail-Adresse eintragen (Platzhalter `info@galabau-jusufi.de` in `index.html`, `impressum.html`, `datenschutz.html` und `js/main.js`)
 - [ ] Domain registrieren und verbinden (siehe unten)
-- [x] Bilder: KI-Symbolbilder eingebaut (Stand und fehlende Bilder siehe [KI-BILDER.md](KI-BILDER.md))
+- [x] Bilder: echte Fotos aus dem Check24-Profil eingebaut (KI-Symbolbilder entfernt)
+- [ ] Google-Unternehmensprofil: Link „Rezension schreiben“ im Abschnitt Bewertungen in `index.html` eintragen und `hidden` entfernen
 - [ ] Kontaktformular: E-Mail-Programm (Standard) oder Web3Forms (siehe unten)
 - [ ] Impressum und Datenschutz prüfen lassen, danach die gelben Hinweis-Kästen entfernen
 - [ ] In allen HTML-Dateien `<meta name="robots" content="noindex, nofollow">` entfernen, damit Google die Seite findet
@@ -36,11 +36,15 @@ KI-BILDER.md        Prompts und Regeln für KI-generierte Symbolbilder
 
 1. Bild als `.jpg` oder `.webp` in `assets/img/` ablegen, idealerweise max. 1600 px breit und unter 400 KB
 2. In `index.html` `src` und `alt` des jeweiligen Bildes anpassen
-3. KI-Bilder bleiben als Symbolbilder gekennzeichnet (Hinweis unter der Galerie)
+3. Nur echte Fotos von Galabau Jusufi verwenden, keine KI-Bilder von Personen
 
-## Kontaktformular
+## Bewertungen aktualisieren
 
-Ohne weitere Einrichtung öffnet das Formular das E-Mail-Programm des Besuchers mit einer vorausgefüllten Nachricht.
+Die Bewertungen stehen fest in `index.html` (Abschnitt `#bewertungen`). Quelle sind alle Check24-Bewertungen mit „Verifizierte Buchung“, ungekürzt und auch kritische; Antworten des Inhabers werden nicht übernommen, ausgeschriebene Nachnamen von Kunden werden abgekürzt. Zum Aktualisieren die Check24-Bewertungsseite (alle Bewertungen geladen) mit Strg+S als „Webseite, vollständig“ in `check24/` speichern. Die Daten stecken als JSON in der Seite (`"publicId":"re_…"` mit `rating`, `text`, `createdAt`). Bewertungen aus dem eigenen Formular erst nach Prüfung von Hand ergänzen.
+
+## Kontakt- und Bewertungsformular
+
+Ohne weitere Einrichtung öffnen die Formulare das E-Mail-Programm des Besuchers mit einer vorausgefüllten Nachricht.
 
 Soll die Anfrage direkt im Postfach landen:
 

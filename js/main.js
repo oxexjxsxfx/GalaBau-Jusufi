@@ -101,9 +101,9 @@
     });
   }
 
-  // ---------- Kontaktformular ----------
-  const form = document.getElementById('contact-form');
-  if (form) {
+  // ---------- Formulare (Anfrage & Bewertung) ----------
+  // Betreff und Erfolgsmeldung stehen als data-subject / data-success am <form>.
+  document.querySelectorAll('form[data-subject]').forEach((form) => {
     const status = form.querySelector('.form-status');
     const submit = form.querySelector('button[type="submit"]');
 
@@ -122,19 +122,14 @@
       const data = new FormData(form);
       if (data.get('botcheck')) return;
 
-      const service = data.get('service') || 'Allgemeine Anfrage';
-      const subject = `Anfrage über die Webseite: ${service}`;
+      const subject = data.get('service') ? `${form.dataset.subject}: ${data.get('service')}` : form.dataset.subject;
 
       if (!CONFIG.web3formsKey) {
-        const body = [
-          `Name: ${data.get('name')}`,
-          `Telefon: ${data.get('phone') || '-'}`,
-          `E-Mail: ${data.get('email')}`,
-          `Ort: ${data.get('location') || '-'}`,
-          `Leistung: ${service}`,
-          '',
-          data.get('message')
-        ].join('\n');
+        // Jede beschriftete Eingabe als „Beschriftung: Wert“, ohne * und (Hinweise in Klammern)
+        const body = [...form.elements]
+          .filter((el) => el.name && el.type !== 'checkbox' && el.labels && el.labels.length)
+          .map((el) => `${el.labels[0].textContent.replace(/\*|\(.*?\)/g, '').trim()}: ${el.value.trim() || '-'}`)
+          .join('\n');
         window.location.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         setStatus('Ihr E-Mail-Programm wurde geöffnet – bitte senden Sie die Nachricht dort ab.', 'success');
         return;
@@ -157,12 +152,12 @@
         const json = await res.json();
         if (!res.ok || !json.success) throw new Error(json.message || 'Fehler');
         form.reset();
-        setStatus('Vielen Dank für Ihre Anfrage! Wir melden uns schnellstmöglich bei Ihnen.', 'success');
+        setStatus(form.dataset.success, 'success');
       } catch (err) {
         setStatus('Das hat leider nicht geklappt. Bitte rufen Sie uns an oder schreiben Sie uns eine E-Mail.', 'error');
       } finally {
         submit.disabled = false;
       }
     });
-  }
+  });
 })();
