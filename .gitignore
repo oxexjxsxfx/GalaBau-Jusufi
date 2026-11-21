@@ -6,3 +6,6 @@ Thumbs.db
 # Rohdaten der KI-Bilder (optimierte Versionen liegen in assets/img)
 ki-bilder/
 assets/img_ki/
+
+# Gespeichertes Check24-Profil (Rohdaten, echte Fotos werden optimiert nach assets/img übernommen)
+check24/
