@@ -198,7 +198,7 @@ p { margin: 0 0 1em; }
   border-radius: var(--radius); padding: 1rem 1.2rem; box-shadow: var(--shadow-lg);
   display: flex; align-items: center; gap: .85rem; max-width: 310px;
 }
-.hero-badge-icon {
+.hero-badge .hero-badge-icon {
   width: 46px; height: 46px; border-radius: 12px; background: var(--leaf-soft); color: var(--green);
   display: grid; place-items: center; flex-shrink: 0;
 }
@@ -286,7 +286,8 @@ svg.about-card-leaf {
 
 .values { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem 1.5rem; list-style: none; padding: 0; margin: 2rem 0 0; }
 .values li { display: flex; gap: .9rem; align-items: center; }
-.values-icon {
+/* doppelte Klasse, sonst überschreibt „.values span“ Zentrierung und Farbe */
+.values .values-icon {
   width: 42px; height: 42px; border-radius: 12px; background: var(--forest); color: var(--leaf-bright);
   display: grid; place-items: center; flex-shrink: 0;
 }
