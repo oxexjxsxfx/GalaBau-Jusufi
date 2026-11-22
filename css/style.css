@@ -432,6 +432,7 @@ svg.about-card-leaf {
 .field input:user-invalid, .field textarea:user-invalid { border-color: #c0492f; }
 .checkbox { display: flex; gap: .7rem; align-items: flex-start; font-size: .92rem; color: var(--muted); grid-column: 1 / -1; }
 .checkbox input { width: 20px; height: 20px; margin-top: .2rem; accent-color: var(--green); flex-shrink: 0; }
+.form-note { grid-column: 1 / -1; margin: 0; font-size: .92rem; color: var(--muted); }
 .form-footer { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; margin-top: 1.5rem; }
 .form-status { font-size: .95rem; font-weight: 600; margin: 0; }
 .form-status.is-success { color: var(--green); }

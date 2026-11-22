@@ -30,6 +30,7 @@ check24/            Gespeichertes Check24-Profil mit Original-Fotos und Bewertun
 - [ ] Falls die E-Mail-Adresse anders als `info@galabau-jusufi.de` heißt: in `index.html`, `impressum.html`, `datenschutz.html` und `js/main.js` ändern
 - [x] Bilder: echte Fotos aus dem Check24-Profil eingebaut (KI-Symbolbilder entfernt)
 - [ ] Google-Unternehmensprofil: Link „Rezension schreiben“ im Abschnitt Bewertungen in `index.html` eintragen und `hidden` entfernen
+- [ ] Wirtschafts-Identifikationsnummer: hat Hamdi nach aktuellem Stand nicht. Kommt ein Brief vom Bundeszentralamt für Steuern (Format `DE` + 9 Ziffern), muss sie ins Impressum (§ 5 DDG)
 - [ ] Impressum und Datenschutz prüfen lassen, danach die gelben Hinweis-Kästen entfernen
 - [ ] In allen HTML-Dateien `<meta name="robots" content="noindex, nofollow">` entfernen, damit Google die Seite findet
 
