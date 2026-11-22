@@ -4,12 +4,16 @@
 (() => {
   'use strict';
 
-  // Kontaktformular-Einstellungen:
-  // Ohne Web3Forms-Key öffnet das Formular das E-Mail-Programm des Besuchers (mailto).
-  // Mit Key (kostenlos auf https://web3forms.com) wird die Anfrage direkt per E-Mail zugestellt.
+  // Formular-Einstellungen:
+  // Solange keine Formspark-ID eingetragen ist, öffnet das Formular das E-Mail-Programm des Besuchers (mailto).
+  // Mit ID (kostenlos auf https://formspark.io, Dashboard → Formular → „How-to“: der Teil hinter
+  // https://submit-form.com/) wird die Nachricht direkt an das Postfach zugestellt.
   const CONFIG = {
-    web3formsKey: '',
-    email: 'info@galabau-jusufi.de'
+    email: 'info@galabau-jusufi.de',
+    formspark: {
+      'contact-form': '',
+      'review-form': ''
+    }
   };
 
   const header = document.querySelector('.site-header');
@@ -103,9 +107,22 @@
 
   // ---------- Formulare (Anfrage & Bewertung) ----------
   // Betreff und Erfolgsmeldung stehen als data-subject / data-success am <form>.
+  // Jede beschriftete Eingabe wird als „Beschriftung: Wert“ übertragen (ohne * und Hinweise in Klammern).
+  // Angehakte Checkboxen mit data-label (z. B. Einwilligung zur Veröffentlichung) werden mit „ja“ mitgeschickt.
+  const readFields = (form) => [...form.elements]
+    .filter((el) => el.name && !el.name.startsWith('_') && el.labels && el.labels.length)
+    .filter((el) => el.type !== 'checkbox' || (el.dataset.label && el.checked))
+    .map((el) => {
+      if (el.type === 'checkbox') return [el.dataset.label, 'ja'];
+      const label = el.labels[0].textContent.replace(/\*|\(.*?\)/g, '').trim();
+      const value = el.tagName === 'SELECT' ? el.selectedOptions[0].text : el.value.trim();
+      return [label, value || '-'];
+    });
+
   document.querySelectorAll('form[data-subject]').forEach((form) => {
     const status = form.querySelector('.form-status');
     const submit = form.querySelector('button[type="submit"]');
+    const formId = CONFIG.formspark[form.id];
 
     const setStatus = (msg, type) => {
       status.textContent = msg;
@@ -120,41 +137,39 @@
       }
 
       const data = new FormData(form);
-      if (data.get('botcheck')) return;
+      if (data.get('_honeypot')) return;
 
-      const subject = data.get('service') ? `${form.dataset.subject}: ${data.get('service')}` : form.dataset.subject;
+      const extra = data.get('service') || (data.get('rating') ? `${data.get('rating')} Sterne` : '');
+      const subject = extra ? `${form.dataset.subject}: ${extra}` : form.dataset.subject;
+      const fields = readFields(form);
 
-      if (!CONFIG.web3formsKey) {
-        // Jede beschriftete Eingabe als „Beschriftung: Wert“, ohne * und (Hinweise in Klammern)
-        const body = [...form.elements]
-          .filter((el) => el.name && el.type !== 'checkbox' && el.labels && el.labels.length)
-          .map((el) => `${el.labels[0].textContent.replace(/\*|\(.*?\)/g, '').trim()}: ${el.value.trim() || '-'}`)
-          .join('\n');
+      if (!formId) {
+        const body = fields.map(([label, value]) => `${label}: ${value}`).join('\n');
         window.location.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         setStatus('Ihr E-Mail-Programm wurde geöffnet – bitte senden Sie die Nachricht dort ab.', 'success');
         return;
       }
 
-      data.append('access_key', CONFIG.web3formsKey);
-      data.append('subject', subject);
-      data.append('from_name', 'Webseite Galabau Jusufi');
-      data.delete('botcheck');
+      // Felder mit _ steuert Formspark: Betreff, Absendername, Antwortadresse, Spamfalle
+      const payload = Object.fromEntries(fields);
+      payload._email = { subject, from: 'Webseite Galabau Jusufi' };
+      payload._replyto = data.get('email');
+      payload._honeypot = '';
 
       submit.disabled = true;
       setStatus('Wird gesendet …');
 
       try {
-        const res = await fetch('https://api.web3forms.com/submit', {
+        const res = await fetch(`https://submit-form.com/${formId}`, {
           method: 'POST',
-          headers: { Accept: 'application/json' },
-          body: data
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify(payload)
         });
-        const json = await res.json();
-        if (!res.ok || !json.success) throw new Error(json.message || 'Fehler');
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
         form.reset();
         setStatus(form.dataset.success, 'success');
       } catch (err) {
-        setStatus('Das hat leider nicht geklappt. Bitte rufen Sie uns an oder schreiben Sie uns eine E-Mail.', 'error');
+        setStatus(`Das hat leider nicht geklappt. Bitte rufen Sie uns an oder schreiben Sie an ${CONFIG.email}.`, 'error');
       } finally {
         submit.disabled = false;
       }
