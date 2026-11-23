@@ -11,8 +11,8 @@
   const CONFIG = {
     email: 'info@galabau-jusufi.de',
     formspark: {
-      'contact-form': '',
-      'review-form': ''
+      'contact-form': '4ppUjNGNJ',
+      'review-form': 'A0Twr2tJE'
     }
   };
 
