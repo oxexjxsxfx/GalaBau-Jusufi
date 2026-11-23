@@ -2,7 +2,7 @@
 
 Moderne, responsive Webseite für **Galabau Jusufi**, Garten- und Landschaftsbau in Gummersbach (Inhaber: Hamdi Jusufi).
 
-- **Vorschau:** https://oxexjxsxfx.github.io/GalaBau-Jusufi/
+- **Adresse:** https://galabau-jusufi.de (die alte Vorschau-Adresse auf github.io leitet dorthin um)
 - Reines HTML, CSS und JavaScript: kein Build-Schritt, keine Abhängigkeiten
 - Optimiert für Smartphone, Tablet und Desktop
 - Datenschutzfreundlich: keine Cookies, kein Tracking, keine Google Fonts oder Maps
@@ -24,9 +24,9 @@ check24/            Gespeichertes Check24-Profil mit Original-Fotos und Bewertun
 
 ## Offene Punkte vor dem Go-Live
 
-- [ ] STRATO „Domainpaket .de“ bestellen, Postfach anlegen, DNS einstellen (siehe „Domain und E-Mail bei STRATO“)
+- [x] STRATO „Domainpaket .de“ bestellt, E-Mail-Adressen und DNS eingerichtet (siehe „Domain und E-Mail bei STRATO“)
 - [ ] Formspark einrichten und die beiden Formular-IDs in `js/main.js` eintragen (siehe „Kontakt- und Bewertungsformular“)
-- [ ] Verträge zur Auftragsverarbeitung: bei STRATO im Kundenlogin abschließen; bei Formspark gilt er automatisch
+- [x] Verträge zur Auftragsverarbeitung: bei STRATO am 22.11.2026 abgeschlossen (neue Version verfügbar: Mein Konto → Auftragsverarbeitung → „Vereinbarung abschließen“); bei Formspark gilt er automatisch
 - [ ] Falls die E-Mail-Adresse anders als `info@galabau-jusufi.de` heißt: in `index.html`, `impressum.html`, `datenschutz.html` und `js/main.js` ändern
 - [x] Bilder: echte Fotos aus dem Check24-Profil eingebaut (KI-Symbolbilder entfernt)
 - [ ] Google-Unternehmensprofil: Link „Rezension schreiben“ im Abschnitt Bewertungen in `index.html` eintragen und `hidden` entfernen
@@ -50,7 +50,7 @@ Beide Formulare senden über [Formspark](https://formspark.io) direkt an das Pos
 
 Einrichtung:
 
-1. Auf formspark.io ein kostenloses Konto mit `info@galabau-jusufi.de` anlegen (erst, wenn das Postfach bei STRATO existiert)
+1. Auf formspark.io ein kostenloses Konto mit `info@galabau-jusufi.de` anlegen
 2. Zwei Formulare anlegen: „Anfrage“ und „Bewertung“
 3. Bei jedem Formular im Tab „How-to“ die ID ablesen (der Teil hinter `https://submit-form.com/`) und in `js/main.js` bei `formspark` eintragen: `'contact-form'` für die Anfrage, `'review-form'` für die Bewertung
 4. Prüfen, dass die E-Mail-Benachrichtigung an `info@galabau-jusufi.de` eingeschaltet ist
@@ -70,18 +70,24 @@ Pflege: Erledigte Anfragen im Formspark-Dashboard löschen (so steht es in der D
 
 Die Webseite bleibt kostenlos auf GitHub Pages. STRATO liefert nur Domain und Postfach: Tarif **„Domainpaket .de“** (im 1. Jahr 0,05 €/Monat, danach 1 €/Monat; kündbar bis 1 Monat vor Ablauf der 12 Monate). Das Paket hat keinen Webspace und kein PHP, das ist für diese Seite aber auch nicht nötig. Nicht „Mail Plus“ nehmen (5 €/Monat nach der Aktion).
 
-1. `galabau-jusufi.de` bestellen, **Inhaber: Hamdi Jusufi** (nicht Omer)
-2. Im STRATO-Login unter E-Mail das Postfach `info@galabau-jusufi.de` anlegen
-3. Im STRATO-Login den Vertrag zur Auftragsverarbeitung abschließen
-4. Unter Domains → Domainverwaltung → Zahnrad bei der Domain → DNS:
+Eingerichtet am 23.11.2026, Inhaber der Domain ist **Hamdi Jusufi**.
 
-   | Eintrag | Einstellung |
-   |---|---|
-   | A-Record | „Eigene IP-Adresse“: `185.199.108.153` |
-   | AAAA-Record | „Eigene IP-Adresse“: `2606:50c0:8000::153` |
-   | MX-Record | **nicht ändern** (bleibt bei STRATO, sonst kommen keine E-Mails mehr an) |
+**E-Mail:** Im Paket steckt genau ein Postfach. STRATO legt es selbst als `webmaster@` an, umbenennen geht nicht. Alle anderen Adressen sind Aliasse (bis zu 20) und landen im selben Postfach:
 
-   STRATO erlaubt beim A-Record nur eine Adresse. GitHub nennt vier (`185.199.108.153` bis `.111.153`), eine reicht aber.
-5. Unter Domainverwaltung die Subdomain `www` anlegen und bei ihr den CNAME-Record auf `oxexjxsxfx.github.io` setzen
-6. Bis zu 24 Stunden warten, dann prüfen: `dig galabau-jusufi.de +short` muss `185.199.108.153` zeigen, `dig www.galabau-jusufi.de +short` muss `oxexjxsxfx.github.io` zeigen
-7. Auf GitHub: Settings → Pages → Custom domain `galabau-jusufi.de` eintragen und speichern. Sobald das Zertifikat bereitsteht, **Enforce HTTPS** einschalten. Danach leitet die alte Vorschau-Adresse automatisch auf die Domain um
+- Anmeldung (Webmail, Handy, Formspark-Bestätigung): immer `webmaster@galabau-jusufi.de` mit dem Postfach-Passwort. Mit einem Alias kann man sich nicht anmelden
+- Aliasse: `info@`, `kontakt@` sowie die festen `postmaster@` und `abuse@`
+- Neue Aliasse: E-Mail → E-Mail-Verwaltung → `webmaster@[Alle Domains]` anklicken → „Weitere Namen (Aliasse)“ → Namen eintragen, Domain `galabau-jusufi.de` wählen → **Speichern ganz unten auf der Seite** (der Knopf speichert die ganze Seite, nicht nur den Alias-Bereich)
+- Mailprogramm/Handy: IMAP `imap.strato.de` Port 993 (SSL/TLS), SMTP `smtp.strato.de` Port 465 (SSL/TLS), Benutzername `webmaster@galabau-jusufi.de`
+
+**DNS** (Domains → Domainverwaltung → galabau-jusufi.de → Reiter DNS):
+
+| Eintrag | Einstellung |
+|---|---|
+| A-Record | „Eigene IP-Adresse“: `185.199.108.153` (STRATO erlaubt nur eine, GitHub nennt vier, eine reicht) |
+| AAAA-Record | „Eigene IP-Adresse“: `2606:50c0:8000::153` |
+| TXT- und CNAME-Records | CNAME, Präfix `www`, Wert `oxexjxsxfx.github.io`; SPF-Regel „Standard STRATO Mailserver“; DMARC „STRATO Standard“ |
+| MX-Record | „STRATO Mailserver“, **nicht ändern**, sonst kommen keine E-Mails mehr an |
+
+Nicht nötig und nicht buchen: „SSL aktivieren“ (das Zertifikat kommt kostenlos von GitHub), „Domain Guard“, „Umleitung → Extern“. Nie „DNS-Einstellungen zurücksetzen“ klicken.
+
+**GitHub:** Settings → Pages → Custom domain `galabau-jusufi.de`, „Enforce HTTPS“ an. Die Datei `CNAME` im Repo gehört dazu und darf nicht gelöscht werden. Prüfen: `dig galabau-jusufi.de +short` zeigt `185.199.108.153`, `dig www.galabau-jusufi.de +short` zeigt `oxexjxsxfx.github.io`
