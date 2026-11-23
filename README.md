@@ -32,6 +32,7 @@ check24/            Gespeichertes Check24-Profil mit Original-Fotos und Bewertun
 - [ ] Google-Unternehmensprofil: Link „Rezension schreiben“ im Abschnitt Bewertungen in `index.html` eintragen und `hidden` entfernen
 - [ ] Wirtschafts-Identifikationsnummer: hat Hamdi nach aktuellem Stand nicht. Kommt ein Brief vom Bundeszentralamt für Steuern (Format `DE` + 9 Ziffern), muss sie ins Impressum (§ 5 DDG)
 - [ ] Impressum und Datenschutz prüfen lassen, danach die gelben Hinweis-Kästen entfernen
+- [ ] Alle Testdaten löschen: Testmails im Postfach (Absender „TEST Claude“, Betreff „Test: Absender info@“) und die Testeinsendungen im Formspark-Dashboard (beide Formulare)
 - [ ] In allen HTML-Dateien `<meta name="robots" content="noindex, nofollow">` entfernen, damit Google die Seite findet
 
 ## Bilder austauschen
