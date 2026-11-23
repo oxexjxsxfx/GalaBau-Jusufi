@@ -29,7 +29,7 @@ check24/            Gespeichertes Check24-Profil mit Original-Fotos und Bewertun
 - [x] Verträge zur Auftragsverarbeitung: bei STRATO am 22.11.2026 abgeschlossen (neue Version verfügbar: Mein Konto → Auftragsverarbeitung → „Vereinbarung abschließen“); bei Formspark gilt er automatisch
 - [ ] Falls die E-Mail-Adresse anders als `info@galabau-jusufi.de` heißt: in `index.html`, `impressum.html`, `datenschutz.html` und `js/main.js` ändern
 - [x] Bilder: echte Fotos aus dem Check24-Profil eingebaut (KI-Symbolbilder entfernt)
-- [ ] Google-Unternehmensprofil: Link „Rezension schreiben“ im Abschnitt Bewertungen in `index.html` eintragen und `hidden` entfernen
+- [x] Google-Unternehmensprofil: Knopf „Auf Google bewerten“ verlinkt auf `https://g.page/r/CYIiSkWTDagpECE/review` (eingebaut am 23.11.2026)
 - [ ] Wirtschafts-Identifikationsnummer: hat Hamdi nach aktuellem Stand nicht. Kommt ein Brief vom Bundeszentralamt für Steuern (Format `DE` + 9 Ziffern), muss sie ins Impressum (§ 5 DDG)
 - [ ] Impressum und Datenschutz prüfen lassen, danach die gelben Hinweis-Kästen entfernen
 - [ ] Alle Testdaten löschen: Testmails im Postfach (Absender „TEST Claude“, Betreff „Test: Absender info@“) und die Testeinsendungen im Formspark-Dashboard (beide Formulare)
