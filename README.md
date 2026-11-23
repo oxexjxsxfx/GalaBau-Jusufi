@@ -77,7 +77,8 @@ Eingerichtet am 23.11.2026, Inhaber der Domain ist **Hamdi Jusufi**.
 - Anmeldung (Webmail, Handy, Formspark-Bestätigung): immer `webmaster@galabau-jusufi.de` mit dem Postfach-Passwort. Mit einem Alias kann man sich nicht anmelden
 - Aliasse: `info@`, `kontakt@` sowie die festen `postmaster@` und `abuse@`
 - Neue Aliasse: E-Mail → E-Mail-Verwaltung → `webmaster@[Alle Domains]` anklicken → „Weitere Namen (Aliasse)“ → Namen eintragen, Domain `galabau-jusufi.de` wählen → **Speichern ganz unten auf der Seite** (der Knopf speichert die ganze Seite, nicht nur den Alias-Bereich)
-- Mailprogramm/Handy: IMAP `imap.strato.de` Port 993 (SSL/TLS), SMTP `smtp.strato.de` Port 465 (SSL/TLS), Benutzername `webmaster@galabau-jusufi.de`
+- Mailprogramm/Handy: IMAP `imap.strato.de` Port 993 (SSL/TLS), SMTP `smtp.strato.de` Port 465 (SSL/TLS), Benutzername `webmaster@galabau-jusufi.de`, als E-Mail-Adresse (Absender) aber `info@galabau-jusufi.de` und als Name „Galabau Jusufi“ eintragen. So geht jede Mail mit info@ raus (getestet am 23.11.2026)
+- Im STRATO Webmail geht Senden als info@ nicht: Das Webmail kennt die Aliasse nicht, dort ist der Absender immer webmaster@. Das webmaster-Postfach lässt sich weder umbenennen noch löschen (STRATO-Standardpostfach); ein zweites Postfach würde 1,50 €/Monat kosten
 
 **DNS** (Domains → Domainverwaltung → galabau-jusufi.de → Reiter DNS):
 
