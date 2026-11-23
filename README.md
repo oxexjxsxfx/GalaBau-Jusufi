@@ -25,7 +25,7 @@ check24/            Gespeichertes Check24-Profil mit Original-Fotos und Bewertun
 ## Offene Punkte vor dem Go-Live
 
 - [x] STRATO „Domainpaket .de“ bestellt, E-Mail-Adressen und DNS eingerichtet (siehe „Domain und E-Mail bei STRATO“)
-- [ ] Formspark einrichten und die beiden Formular-IDs in `js/main.js` eintragen (siehe „Kontakt- und Bewertungsformular“)
+- [x] Formspark eingerichtet, Formular-IDs in `js/main.js` eingetragen und am 23.11.2026 mit je einer Testeinsendung geprüft
 - [x] Verträge zur Auftragsverarbeitung: bei STRATO am 22.11.2026 abgeschlossen (neue Version verfügbar: Mein Konto → Auftragsverarbeitung → „Vereinbarung abschließen“); bei Formspark gilt er automatisch
 - [ ] Falls die E-Mail-Adresse anders als `info@galabau-jusufi.de` heißt: in `index.html`, `impressum.html`, `datenschutz.html` und `js/main.js` ändern
 - [x] Bilder: echte Fotos aus dem Check24-Profil eingebaut (KI-Symbolbilder entfernt)
