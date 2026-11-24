@@ -35,6 +35,7 @@ check24/            Gespeichertes Check24-Profil mit Original-Fotos und Bewertun
 - [ ] Alle Testdaten löschen: Testmails im Postfach (Absender „TEST Claude“, Betreff „Test: Absender info@“) und die Testeinsendungen im Formspark-Dashboard (beide Formulare)
 - [x] `noindex` aus allen Seiten entfernt (24.11.2026), nur `404.html` behält es absichtlich
 - [x] Google Search Console eingerichtet (Google-Konto info@, Property `https://galabau-jusufi.de/`), Indexierung der Startseite am 24.11.2026 beantragt. Die Datei `googlee719f6db6216ac70.html` ist der Inhabernachweis und darf **nicht gelöscht** werden
+- [x] Domain bei GitHub verifiziert (24.11.2026, Konto oxexjxsxfx → Settings → Pages → Verified domains). Schützt davor, dass jemand anderes eine GitHub-Seite unter galabau-jusufi.de einhängt. Der TXT-Record `_github-pages-challenge-oxexjxsxfx` bei STRATO (TXT- und CNAME-Records) muss **bleiben**, sonst verfällt die Verifizierung
 
 ## Bilder austauschen
 
