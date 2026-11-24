@@ -478,10 +478,6 @@ svg.about-card-leaf {
 .legal h2 { font-size: 1.5rem; margin-top: 2.5rem; }
 .legal h3 { font-size: 1.15rem; margin-top: 1.75rem; }
 .legal address { font-style: normal; }
-.notice {
-  background: #fff6de; border: 1px solid #ecd49a; color: #6b5313; border-radius: var(--radius-sm);
-  padding: 1rem 1.25rem; font-size: .95rem; margin-bottom: 2rem;
-}
 .error-page { min-height: 70vh; display: grid; place-items: center; text-align: center; padding: calc(var(--header-h) + 3rem) 0 3rem; }
 .error-page .big { font: 800 clamp(5rem, 18vw, 10rem)/1 var(--font-display); color: var(--leaf); letter-spacing: -.04em; }
 
