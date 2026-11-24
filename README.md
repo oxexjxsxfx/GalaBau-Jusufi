@@ -30,7 +30,7 @@ check24/            Gespeichertes Check24-Profil mit Original-Fotos und Bewertun
 - [ ] Falls die E-Mail-Adresse anders als `info@galabau-jusufi.de` heißt: in `index.html`, `impressum.html`, `datenschutz.html` und `js/main.js` ändern
 - [x] Bilder: echte Fotos aus dem Check24-Profil eingebaut (KI-Symbolbilder entfernt)
 - [x] Google-Unternehmensprofil: Knopf „Auf Google bewerten“ verlinkt auf `https://g.page/r/CYIiSkWTDagpECE/review` (eingebaut am 23.11.2026)
-- [ ] Wirtschafts-Identifikationsnummer: hat Hamdi nach aktuellem Stand nicht. Kommt ein Brief vom Bundeszentralamt für Steuern (Format `DE` + 9 Ziffern), muss sie ins Impressum (§ 5 DDG)
+- [ ] Wirtschafts-Identifikationsnummer (Format `DE` + 9 Ziffern): Ohne USt-IdNr teilt das Bundeszentralamt für Steuern sie **nur über ELSTER** mit, nicht per Post. Hamdi hat (Stand 24.11.2026) kein ELSTER-Konto → beim Steuerberater bzw. bei dem, der seine Steuererklärung macht, nachfragen oder ein ELSTER-Konto anlegen. Sobald sie da ist, muss sie ins Impressum (§ 5 DDG)
 - [ ] Impressum und Datenschutz prüfen lassen, danach die gelben Hinweis-Kästen entfernen
 - [ ] Alle Testdaten löschen: Testmails im Postfach (Absender „TEST Claude“, Betreff „Test: Absender info@“) und die Testeinsendungen im Formspark-Dashboard (beide Formulare)
 - [ ] In allen HTML-Dateien `<meta name="robots" content="noindex, nofollow">` entfernen, damit Google die Seite findet
